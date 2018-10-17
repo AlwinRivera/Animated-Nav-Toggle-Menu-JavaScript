@@ -3,7 +3,7 @@
 	<head>
 		<title>Animated Nav Toggle & Menu</title>
 		<style>
-			*{
+    			*{
                 padding:0;
                 border:0;
                 margin:0;
@@ -54,7 +54,7 @@
                 transition-duration:250ms;
                 transition-timing-function:cubic-bezier(.13,.24,.35,1.64);
             }
-            .menu-toggle .one,
+.menu-toggle .one,
             .menu-toggle .two{
                 margin-bottom:7px;
             }
@@ -103,10 +103,10 @@
             .main-nav-list::before{
                 left:0;
             }
-            .main-nav-list::after{
+.main-nav-list::after{
                 right:0;
             }
-            .main.nav-list ul{
+            .main-nav-list ul{
                 position:absolute;
                 top:-30%;
                 left:50%;
@@ -208,7 +208,7 @@
 
 		<script>
 			var menuToggle = document.querySelector("#menu-toggle");
-            var activeElements = document.querySelector(".active-element");
+            var activeElements = document.querySelectorAll(".active-element");
             var toggledMenu = menuToggle.addEventListener("click",function(){
                 for(var activated = 0; activated < activeElements.length; activated++){
                     activeElements[activated].classList.toggle("active");
